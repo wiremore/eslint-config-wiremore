@@ -7,6 +7,7 @@ A shared ESLint configuration for and by JavaScript developers at [wiremore](htt
 Get started by running this command in the root of your project:
 
 `npm install --save-dev eslint eslint-config-wiremore`
+
 Then add an `.eslintrc.json` file to the root of your project before running the eslint command, with the following:
 
 ```
