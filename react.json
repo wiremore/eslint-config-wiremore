@@ -12,7 +12,7 @@
     "react/require-render-return": 2,
     "react/self-closing-comp": 2,
     "react/no-did-mount-set-state": 1,
-    "react/no-unused-prop-types": 2,
+    "react/no-unused-prop-types": [2, {"skipShapeProps": true}],
     "react/jsx-first-prop-new-line": [1, "multiline"],
     "react/jsx-wrap-multilines": 2,
     "react/jsx-max-props-per-line": [1, {"maximum": 3}],
