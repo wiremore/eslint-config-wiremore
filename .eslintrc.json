@@ -18,10 +18,13 @@
       "modules": true,
       "arrowFunctions": true,
       "classes":true,
-      "spread":true,
+      "spread":true
     },
     "sourceType": "module"
   },
+  "plugins": [
+      "class-property"
+  ],
   "rules": {
     "arrow-parens": [2, "always"],
     "block-scoped-var": 2,
