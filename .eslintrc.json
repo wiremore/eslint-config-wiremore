@@ -23,7 +23,7 @@
     "sourceType": "module"
   },
   "plugins": [
-      "class-property"
+      "babel"
   ],
   "rules": {
     "arrow-parens": [2, "always"],
@@ -50,7 +50,7 @@
     "no-floating-decimal": 2,
     "no-implicit-coercion": [2, { "allow": ["!!"] } ],
     "no-implied-eval": 2,
-    "no-invalid-this": 2,
+    "babel/no-invalid-this": 2,
     "no-lone-blocks": 2,
     "no-loop-func": 2,
     "no-multi-spaces": 2,
