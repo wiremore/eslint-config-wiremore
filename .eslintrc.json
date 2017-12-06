@@ -3,10 +3,16 @@
     "browser": true,
     "es6": true,
     "commonjs": true,
-    "node": true
+    "node": true,
+    "jest": true
+  },
+  "globals": {
+      "__DEV__": true
   },
   "extends": [
-    "eslint:recommended"
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
   ],
   "installedESLint": true,
   "parser": "babel-eslint",
@@ -23,7 +29,8 @@
     "sourceType": "module"
   },
   "plugins": [
-      "babel"
+      "babel",
+      "import"
   ],
   "rules": {
     "arrow-parens": [2, "always"],
@@ -82,6 +89,11 @@
     "quotes": [2, "single"],
     "semi": [2, "always"],
     "space-in-parens": [2, "never"],
-    "yoda": 2
+    "yoda": 2,
+    "import/first": 2,
+    "import/no-unresolved": 2,
+    "import/prefer-default-export": 1,
+    "import/no-unassigned-import": 2,
+    "import/named": 2
   }
 }
