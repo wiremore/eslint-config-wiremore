@@ -18,8 +18,19 @@
   "dependencies": {
     "babel-eslint": "^7.1.1",
     "eslint": "^3.19.0",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-react": "^6.7.1"
+    "eslint-plugin-prettier": "^2.4.0",
+    "eslint-plugin-react": "^6.7.1",
+    "eslint-plugin-security": "^1.4.0",
+    "prettier": "^1.10.2"
+  },
+  "peerDependencies": {
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-prettier": "^2.4.0",
+    "eslint-plugin-react": "^6.7.1",
+    "eslint-plugin-security": "^1.4.0"
   }
 }
