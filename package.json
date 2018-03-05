@@ -1,36 +1,40 @@
 {
-  "name": "eslint-config-wiremore",
-  "version": "1.2.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wiremore/eslint-config-wiremore.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wiremore/eslint-config-wiremore/issues"
-  },
-  "homepage": "https://github.com/wiremore/eslint-config-wiremore#readme",
-  "dependencies": {
-    "babel-eslint": "^7.1.1",
-    "eslint": "^3.19.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-babel": "^4.1.1",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-prettier": "^2.4.0",
-    "eslint-plugin-react": "^6.7.1",
-    "eslint-plugin-security": "^1.4.0",
-    "prettier": "^1.10.2"
-  },
-  "peerDependencies": {
-    "eslint-plugin-babel": "^4.1.1",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-prettier": "^2.4.0",
-    "eslint-plugin-react": "^6.7.1",
-    "eslint-plugin-security": "^1.4.0"
-  }
+    "name": "eslint-config-wiremore",
+    "version": "1.2.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "install-deps":
+            "npm info eslint-config-wiremore peerDependencies --json | command sed 's/[{},]//g ; s/: /@/g' | xargs npm install -D"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wiremore/eslint-config-wiremore.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/wiremore/eslint-config-wiremore/issues"
+    },
+    "homepage": "https://github.com/wiremore/eslint-config-wiremore#readme",
+    "dependencies": {
+        "babel-eslint": "^7.1.1",
+        "eslint": "^3.19.0",
+        "eslint-config-prettier": "^2.9.0",
+        "eslint-plugin-babel": "^4.1.1",
+        "eslint-plugin-import": "^2.8.0",
+        "eslint-plugin-prettier": "^2.4.0",
+        "eslint-plugin-react": "^6.7.1",
+        "eslint-plugin-security": "^1.4.0",
+        "prettier": "^1.10.2"
+    },
+    "peerDependencies": {
+        "eslint-config-prettier": "^2.9.0",
+        "eslint-plugin-babel": "^4.1.1",
+        "eslint-plugin-import": "^2.8.0",
+        "eslint-plugin-prettier": "^2.4.0",
+        "eslint-plugin-react": "^6.7.1",
+        "eslint-plugin-security": "^1.4.0"
+    }
 }
