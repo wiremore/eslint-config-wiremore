@@ -1,11 +1,10 @@
 {
     "name": "eslint-config-wiremore",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "description": "",
     "main": "index.js",
     "scripts": {
-        "install-deps":
-            "npm info eslint-config-wiremore peerDependencies --json | command sed 's/[{},]//g ; s/: /@/g' | xargs npm install -D"
+        "install-deps": "npm info eslint-config-wiremore peerDependencies --json | command sed 's/[{},]//g ; s/: /@/g' | xargs npm install -D"
     },
     "repository": {
         "type": "git",
