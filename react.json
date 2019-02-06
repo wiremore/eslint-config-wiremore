@@ -4,7 +4,8 @@
     "plugin:react/recommended"
   ],
   "plugins": [
-    "react"
+    "react",
+    "react-hooks"
   ],
   "rules": {
     "react/no-danger": 1,
@@ -20,6 +21,7 @@
     "react/jsx-max-props-per-line": [1, {"maximum": 3}],
     "react/jsx-indent": 2,
     "react/jsx-equals-spacing": 2,
-    "react/jsx-pascal-case": 2
+    "react/jsx-pascal-case": 2,
+    "react-hooks/rules-of-hooks": 2
   }
 }

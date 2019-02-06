@@ -1,41 +1,45 @@
 {
-    "name": "eslint-config-wiremore",
-    "version": "1.5.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "install-deps": "npm info eslint-config-wiremore peerDependencies --json | command sed 's/[{},]//g ; s/: /@/g' | xargs npm install -D"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/wiremore/eslint-config-wiremore.git"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/wiremore/eslint-config-wiremore/issues"
-    },
-    "homepage": "https://github.com/wiremore/eslint-config-wiremore#readme",
-    "dependencies": {
-        "babel-eslint": "^10.0.1",
-        "eslint": "^5.13.0",
-        "eslint-config-prettier": "^4.0.0",
-        "eslint-plugin-babel": "^5.1.0",
-        "eslint-plugin-flowtype": "^3.2.1",
-        "eslint-plugin-import": "^2.16.0",
-        "eslint-plugin-prettier": "^3.0.1",
-        "eslint-plugin-react": "^7.8.2",
-        "eslint-plugin-security": "^1.4.0",
-        "prettier": "^1.16.4"
-    },
-    "peerDependencies": {
-        "eslint-config-prettier": "^2.9.0",
-        "eslint-plugin-babel": "^5.1.0",
-        "eslint-plugin-flowtype": "^2.47.1",
-        "eslint-plugin-import": "^2.12.0",
-        "eslint-plugin-prettier": "^2.6.0",
-        "eslint-plugin-react": "^7.8.2",
-        "eslint-plugin-security": "^1.4.0"
-    }
+  "name": "eslint-config-wiremore",
+  "version": "2.2.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-deps": "npm info eslint-config-wiremore peerDependencies --json | command sed 's/[{},]//g ; s/: /@/g' | xargs npm install -D"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wiremore/eslint-config-wiremore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wiremore/eslint-config-wiremore/issues"
+  },
+  "homepage": "https://github.com/wiremore/eslint-config-wiremore#readme",
+  "dependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^4.19.1 || ^5.13.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-babel": "^5.2.0",
+    "eslint-plugin-flowtype": "^3.2.1",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-hooks": "^0.0.0",
+    "eslint-plugin-security": "^1.4.0",
+    "prettier": "^1.16.4"
+  },
+  "peerDependencies": {
+    "eslint": "^4.19.1 || ^5.13.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-babel": "^5.2.0",
+    "eslint-plugin-flowtype": "^3.2.1",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-hooks": "^0.0.0",
+    "eslint-plugin-security": "^1.4.0",
+    "prettier": "^1.16.4"
+  }
 }

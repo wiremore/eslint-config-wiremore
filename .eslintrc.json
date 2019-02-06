@@ -17,13 +17,28 @@
         "es6": true,
         "commonjs": true,
         "node": true,
-        "jest": true
+        "jest": true,
+        "mocha": true
     },
     "globals": {
         "__DEV__": true
     },
-    "extends": ["eslint:recommended", "plugin:import/errors", "plugin:import/warnings", "plugin:prettier/recommended"],
-    "plugins": ["babel", "import", "prettier"],
+    "extends": [
+        "eslint:recommended",
+        "plugin:flowtype/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:prettier/recommended",
+        "plugin:security/recommended",
+        "prettier",
+        "prettier/react"
+    ],
+    "plugins": ["babel", "import", "prettier", "flowtype", "security"],
+    "settings": {
+        "flowtype": {
+            "onlyFilesWithFlowAnnotation": true
+        }
+    },
     "rules": {
         "arrow-parens": [2, "always"],
         "block-scoped-var": 2,
