@@ -1,8 +1,8 @@
-const { peerDependencies } = require('./package.json');
+// const { peerDependencies } = require('./package.json');
 
-const install = Object.entries(peerDependencies).map(([pkg, version]) => {
-    return [pkg, version].join('@');
-});
+// const install = Object.entries(peerDependencies).map(([pkg, version]) => {
+//     return [pkg, version].join('@');
+// });
 
 // console.log(install.join(' '));
 
@@ -11,5 +11,8 @@ Package 'eslint-config-wiremore' was installed successfully. Please make sure to
 (
   export PKG=eslint-config-wiremore;
   yarn info "$PKG@latest" peerDependencies --json | command sed 's/[{},]//g ; s/: /@/g' | xargs yarn add --dev "$PKG@latest"
-)
+);
+
+# or:
+npx install-peerdeps --dev eslint-config-wiremore
 `);

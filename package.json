@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install-deps": "npm info eslint-config-wiremore peerDependencies --json | command sed 's/[{},]//g ; s/: /@/g' | xargs npm install -D"
+    "install-deps": "npm info eslint-config-wiremore peerDependencies --json | command sed 's/[{},]//g ; s/: /@/g' | xargs npm install -D",
+    "postinstall": "node postinstall.js"
   },
   "repository": {
     "type": "git",
@@ -41,5 +42,8 @@
     "eslint-plugin-react-hooks": "^1.0.1",
     "eslint-plugin-security": "^1.4.0",
     "prettier": "^1.16.4"
+  },
+  "devDependencies": {
+    "install-peerdeps": "^1.10.2"
   }
 }
