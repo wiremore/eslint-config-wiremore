@@ -1,21 +1,22 @@
 # eslint-config-wiremore
 
-A shared ESLint configuration for and by JavaScript developers at [wiremore](https://www.wiremore.com)
+A shared ESLint configuration by [wiremore](https://www.wiremore.com). Rules are carefully selected to be as restrictive as necessary but no more. This config aims to cause as much consistency as possible in a codebase while keeping the code readable even for not-so-experienced developers.
 
 ## Installation
 
 Get started by running this command in the root of your project:
 
-`npm install --save-dev eslint eslint-config-wiremore`
+```
+npm install --save-dev eslint eslint-config-wiremore
+```
+
+or
+
+```
+yarn add --dev eslint eslint-config-wiremore
+```
 
 Afterwards install all peerDependencies into your project:
-
-```
-npm install -g install-peerdeps
-install-peerdeps --dev eslint-config-wiremore
-```
-
-or with npm >=5.x
 
 ```
 npx install-peerdeps --dev eslint-config-wiremore
@@ -34,9 +35,7 @@ Then add an `.eslintrc.json` file to the root of your project before running the
 
 ```
 {
-  "extends": [
-    "wiremore"
-  ]
+  "extends": ["wiremore"]
 }
 ```
 
@@ -44,10 +43,15 @@ Optionally you can also add linting for React/JSX:
 
 ```
 {
-  "extends": [
-    "wiremore"
-    "wiremore/react"
-  ]
+  "extends": ["wiremore", "wiremore/react"]
+}
+```
+
+If you want to use TypeScript, that's fine, we got you covered:
+
+```
+{
+  "extends": ["wiremore", "wiremore/react", "wiremore/typescript"]
 }
 ```
 
