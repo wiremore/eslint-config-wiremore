@@ -106,6 +106,5 @@ module.exports = {
     'import/named': 2,
     'import/no-amd': 2,
     'import/no-webpack-loader-syntax': 2,
-    'react/jsx-no-comment-textnodes': 1,
   },
 };

@@ -15,4 +15,5 @@ Package 'eslint-config-wiremore' was installed successfully. Please make sure to
 
 # or:
 npx install-peerdeps --dev eslint-config-wiremore
+
 `);

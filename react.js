@@ -23,5 +23,6 @@ module.exports = {
     'react/jsx-equals-spacing': 2,
     'react/jsx-pascal-case': 2,
     'react-hooks/rules-of-hooks': 2,
+    'react/jsx-no-comment-textnodes': 1,
   },
 };
