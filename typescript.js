@@ -1,7 +1,7 @@
 module.exports = {
   overrides: [
     {
-      files: ['** /*.ts', '**/*.tsx'],
+      files: ['**/*.ts', '**/*.tsx'],
       parser: '@typescript-eslint/parser',
       parserOptions: {
         ecmaVersion: 2018,
@@ -11,7 +11,15 @@ module.exports = {
         },
         warnOnUnsupportedTypeScriptVersion: true,
       },
-      plugins: ['@typescript-eslint'],
+      plugins: ['@typescript-eslint', 'plugin:import/typescript'],
+      settings: {
+        'import/parsers': {
+          '@typescript-eslint/parser': ['.ts', '.tsx'],
+        },
+        'import/resolver': {
+          typescript: {},
+        },
+      },
       rules: {
         '@typescript-eslint/no-angle-bracket-type-assertion': 'warn',
         'no-array-constructor': 'off',
