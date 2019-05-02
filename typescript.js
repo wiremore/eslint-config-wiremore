@@ -21,12 +21,13 @@ module.exports = {
         },
       },
       rules: {
-        '@typescript-eslint/no-angle-bracket-type-assertion': 1,
         'no-array-constructor': 0,
-        '@typescript-eslint/no-array-constructor': 1,
-        '@typescript-eslint/no-namespace': 2,
+        'no-useless-constructor': 0,
         'no-unused-vars': 0,
         'no-undef': 0,
+        '@typescript-eslint/no-angle-bracket-type-assertion': 1,
+        '@typescript-eslint/no-array-constructor': 1,
+        '@typescript-eslint/no-namespace': 2,
         '@typescript-eslint/no-unused-vars': [
           1,
           {
@@ -34,8 +35,12 @@ module.exports = {
             ignoreRestSiblings: true,
           },
         ],
-        'no-useless-constructor': 0,
         '@typescript-eslint/no-useless-constructor': 1,
+        // these two cause trouble with type imports. disable until these are resolved:
+        // https://github.com/alexgorbatchev/eslint-import-resolver-typescript/issues/17
+        'import/no-unresolved': 0,
+        // https://github.com/benmosher/eslint-plugin-import/issues/1341
+        'import/named': 0,
       },
     },
     {
