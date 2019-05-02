@@ -11,7 +11,7 @@ module.exports = {
         },
         warnOnUnsupportedTypeScriptVersion: true,
       },
-      plugins: ['@typescript-eslint', 'plugin:import/typescript'],
+      plugins: ['@typescript-eslint/eslint-plugin'],
       settings: {
         'import/parsers': {
           '@typescript-eslint/parser': ['.ts', '.tsx'],

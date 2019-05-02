@@ -82,7 +82,7 @@ module.exports = {
     'no-throw-literal': 2,
     'no-unmodified-loop-condition': 2,
     'no-unused-expressions': [2, { allowShortCircuit: true, allowTernary: true }],
-    'no-unused-vars': [2, { argsIgnorePattern: '^_|^error$' }],
+    'no-unused-vars': [2, { argsIgnorePattern: '^_', caughtErrors: 'none' }],
     'no-useless-call': 2,
     'no-useless-concat': 2,
     'no-useless-escape': 2,
