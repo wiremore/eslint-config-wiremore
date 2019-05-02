@@ -1,7 +1,7 @@
 module.exports = {
   overrides: [
     {
-      files: ['**/*.ts', '**/*.tsx'],
+      files: ['.ts', '.tsx'],
       parser: '@typescript-eslint/parser',
       parserOptions: {
         ecmaVersion: 2018,
@@ -38,7 +38,7 @@ module.exports = {
       },
     },
     {
-      files: ['**/*.d.ts'],
+      files: ['.d.ts'],
       rules: {
         'import/export': 0,
         'no-redeclare': 0,
