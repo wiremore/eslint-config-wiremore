@@ -90,7 +90,7 @@ module.exports = {
     'one-var': [2, 'never'],
     'prefer-const': 2,
     'prefer-arrow-callback': 2,
-    'quotes': [2, 'single'],
+    'quotes': [2, 'single', { avoidEscape: true }],
     'semi': [2, 'always'],
     'space-in-parens': [2, 'never'],
     'yoda': 2,
