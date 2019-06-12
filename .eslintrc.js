@@ -101,7 +101,6 @@ module.exports = {
     ],
     'import/first': 2,
     'import/no-unresolved': 2,
-    'import/prefer-default-export': 1,
     'import/no-unassigned-import': 0,
     'import/named': 2,
     'import/no-amd': 2,
