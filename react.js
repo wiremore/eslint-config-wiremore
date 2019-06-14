@@ -21,7 +21,8 @@ module.exports = {
     'react/jsx-indent': 2,
     'react/jsx-equals-spacing': 2,
     'react/jsx-pascal-case': 2,
-    'react-hooks/rules-of-hooks': 2,
     'react/jsx-no-comment-textnodes': 1,
+    'react-hooks/rules-of-hooks': 2,
+    'react-hooks/exhaustive-deps': 1,
   },
 };
