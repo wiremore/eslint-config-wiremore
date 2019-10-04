@@ -2,6 +2,8 @@
 
 A shared ESLint configuration by [wiremore](https://www.wiremore.com). Rules are carefully selected to be as restrictive as necessary but no more. This config aims to cause as much consistency as possible in a codebase while keeping the code readable even for not-so-experienced developers.
 
+**Note:** This eslint-config will _soon_ be replaced by [@werkzeugkiste/eslint-config](https://github.com/werkzeugkiste/eslint-config).
+
 ## Installation
 
 Get started by running this command in the root of your project:
